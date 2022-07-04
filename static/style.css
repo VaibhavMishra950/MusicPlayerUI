@@ -1,0 +1,154 @@
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('Poppins.ttf');
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.bgImage{
+    height: 120%;
+    width: 120%;
+    position: fixed;
+    top: -10%;
+    left: -10%;
+    z-index: -1;
+    filter: blur(20px);
+    margin: 0;
+    padding: 0;
+}
+.box{
+    margin: 5px auto auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 330px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+.title{
+    width: 80%;
+    font-family: 'Poppins';
+    color: white;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 0px;
+}
+.name{
+    font-size: 35px;
+    opacity: 1;
+}
+.artist{
+    font-size: 14px;
+    margin-top: 4px;
+    opacity: 1;
+}
+.cover {
+    width: 90%;
+    margin: 20px;
+}
+.cover img{
+    width: 95%;
+    border-radius: 30px;
+}
+.playTime{
+    display: flex;
+    flex-direction: column;
+    
+}
+.playTime input{
+    width: 325px;
+}
+.playTime .timestamps{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    font-family: 'Poppins';
+    color: white;
+    font-weight: bolder;
+    opacity: 0;
+}
+
+.playTime .timestamps .start{
+    margin-right: auto;
+}
+
+.playTime .timestamps .end{
+    margin-left: auto;
+}
+
+.buttons{
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* background: red; */
+}
+
+.buttons button{
+      margin: 3px 30px;
+      font-size: 30px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+}
+
+.buttons button:nth-child(2){
+    margin: 3px 20px;
+    font-size: 20px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    color: white;
+}
+
+#mute{
+    color: white;
+}
+
+.spectrum{
+    width: 96%;
+    position: relative;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    padding: 0;
+}
+
+.bar{
+    width: 3%;
+    margin: 0px 0.5%;
+    border-radius: 5px 5px 0px 0px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+
+.bar:nth-child(2n){
+    box-shadow:0 0 10px royalblue;
+}
+
+.bar:nth-child(2n-1){
+    box-shadow:0 0 10px #ff0095;
+}
+
